@@ -44,9 +44,6 @@ sed -i "s,directory=.*,directory=\/tmp\/rstudio-server\/${USER}_database," $CWD/
   --server-data-dir="$CWD/rstudio-server" \
   --rsession-which-r=$(which R) \
   --rsession-ld-library-path=$CONDA_PREFIX/lib \
-  --rsession-path="$CWD/rsession.sh" \
   --server-user $USER \
   --database-config-file "$CWD/database.conf" \
   $REVOCATION_LIST_PAR
-
-
